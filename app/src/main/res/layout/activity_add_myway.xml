@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEE"
+    tools:context=".set.AddMyway">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_finish"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可通过以下方式找到我"
+            android:textSize="@dimen/settings_hint_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="账号"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/settings_switch_add_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="邮箱"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/settings_switch_add_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭后，其他用户将不能通过上述方式找到你"
+            android:textSize="@dimen/settings_hint_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可通过以下方式添加我"
+            android:textSize="@dimen/settings_hint_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="群聊"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/settings_switch_add_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="我的二维码"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/settings_switch_add_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="我的名片"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <com.suke.widget.SwitchButton
+            android:id="@+id/settings_switch_add_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:sb_show_indicator="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

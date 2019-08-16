@@ -1,0 +1,138 @@
+<resources>
+    <string name="app_name">WeChat</string>
+
+    <string name="hello_blank_fragment">Hello Fragment</string>
+
+    <string name="main_bottom_nav_chat_list">消息</string>
+    <string name="main_bottom_nav_contact">联系人</string>
+    <string name="main_bottom_nav_discover">发现</string>
+    <string name="main_bottom_nav_myself">我</string>
+
+    <string name="chat_send">发送</string>
+
+    <string name="chat_recycler_time">1970&#8211;01&#8211;01 00:00:00</string>
+    <string name="chat_recycler_message">Message</string>
+    <string name="chat_recycler_send">发送</string>
+
+    <string name="chat_list_recycler_user">昵称</string>
+    <string name="chat_list_recycler_text">消息内容</string>
+    <string name="chat_list_recycler_time">00:00</string>
+
+    <string name="login_account">账号</string>
+    <string name="login_password">密码</string>
+    <string name="login_button">登录</string>
+    <string name="login_button_register">注册</string>
+
+    <string name="register_title">新用户注册</string>
+    <string name="register_name">昵称</string>
+    <string name="register_name_input">请输入昵称</string>
+    <string name="register_email">邮箱</string>
+    <string name="register_email_input">请输入邮箱</string>
+    <string name="register_pwd">密码</string>
+    <string name="register_pwd_input">请输入密码</string>
+    <string name="register_repwd">确认密码</string>
+    <string name="register_repwd_input">请重复输入密码</string>
+    <string name="register_button">注册</string>
+
+    <string name="friend_info_name_note">昵称/备注</string>
+    <string name="friend_info_nickname">昵称</string>
+    <string name="friend_info_nickname2">用户昵称：</string>
+    <string name="friend_info_account">账号：</string>
+    <string name="friend_info_region">地区：</string>
+    <string name="friend_info_note">设置备注和标签</string>
+    <string name="friend_info_email">电子邮箱</string>
+    <string name="friend_info_signature">个性签名</string>
+    <string name="friend_info_more">更多信息</string>
+    <string name="friend_info_btn_send">发消息</string>
+    <string name="friend_info_btn_apply">申请好友</string>
+
+    <string name="friend_request_title">新的朋友</string>
+    <string name="friend_request_name">用户昵称</string>
+    <string name="friend_request_intro">该用户请求添加你为好友</string>
+    <string name="friend_request_accept">接受</string>
+    <string name="friend_request_refuse">拒绝</string>
+
+    <string name="group_title">群聊</string>
+
+    <string name="add_friend_title">添加好友</string>
+    <string name="add_friend_hint">账号/群号/昵称</string>
+    <string name="add_friend_scan">扫一扫添加好友</string>
+    <string name="add_friend_multiple">按条件查找陌生人</string>
+
+    <string name="create_group_title">创建群聊</string>
+
+    <string name="scan_code_title">扫一扫</string>
+    <string name="scan_code_album">从相册选取</string>
+
+    <string name="myself_gender">性别</string>
+    <string name="myself_birthday">生日</string>
+    <string name="myself_settings">设置</string>
+
+    <string name="webview_browser">在浏览器中打开</string>
+
+    <string name="settings_safety">账户和安全</string>
+    <string name="settings_safety_uid">账号</string>
+    <string name="settings_safety_pwd">修改密码</string>
+    <string name="settings_safety_pwd_old">原密码</string>
+    <string name="settings_safety_pwd_old_hint">输入原密码</string>
+    <string name="settings_safety_pwd_new">新密码  </string>
+    <string name="settings_safety_pwd_new_hint">输入新密码</string>
+    <string name="settings_safety_pwd_new2">确认密码</string>
+    <string name="settings_safety_pwd_new2_hint">再次填写确认</string>
+    <string name="settings_safety_pwd_hint">请修改密码。</string>
+    <string name="settings_safety_pwd_hint2">密码必须至少8个字符，并且同时包含字母和数字的组合（不能是纯数字）</string>
+    <string name="settings_safety_pwd_forget">忘记原密码？</string>
+    <string name="settings_safety_contact">应急联系人</string>
+    <string name="settings_safety_device">登录设备管理</string>
+    <string name="settings_safety_finger">指纹锁定</string>
+    <string name="settings_safety_remove">注销账号</string>
+    <string name="settings_notification">消息与通知</string>
+    <string name="settings_notification_switch">通知开关</string>
+    <string name="settings_notification_new_message">新消息提醒</string>
+    <string name="settings_notification_call">音视频通话提醒</string>
+    <string name="settings_notification_detail">通知显示消息详情</string>
+    <string name="settings_notification_sv">声音和振动</string>
+    <string name="settings_notification_sound">声音</string>
+    <string name="settings_notification_vibrate">振动</string>
+    <string name="settings_privacy">隐私</string>
+    <string name="settings_privacy_add">添加我的方式</string>
+    <string name="settings_privacy_confirm">添加我为好友时需要验证</string>
+    <string name="settings_privacy_black">黑名单</string>
+    <string name="settings_privacy_friend">好友动态权限设置</string>
+    <string name="settings_privacy_grant">授权管理</string>
+    <string name="settings_general">通用</string>
+    <string name="settings_help">帮助和反馈</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_change">切换账号</string>
+    <string name="settings_logout">退出登录</string>
+
+    <string name="push">push</string>
+
+    <string name="contact_recycler_letter">A</string>
+    <string name="contact_recycler_name">昵称</string>
+    <string name="activity_login_title">登录</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

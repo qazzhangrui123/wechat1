@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FriendInfoActivity"
+    android:background="#EEE">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/friend_info_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupMenu"/>
+
+    <LinearLayout
+        android:id="@+id/friend_info_photo_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FFF"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <ImageView
+            android:id="@+id/friend_info_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/friend_info_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/friend_info_name_note"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/friend_info_nickname_gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/friend_info_margin_top_10"
+                android:text="@string/friend_info_nickname2"/>
+
+            <TextView
+                android:id="@+id/friend_info_uid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/friend_info_margin_top_10"
+                android:text="@string/friend_info_account"/>
+
+            <TextView
+                android:id="@+id/friend_info_region"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/friend_info_margin_top_10"
+                android:layout_marginBottom="@dimen/friend_info_margin_top_10"
+                android:text="@string/friend_info_region"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/friend_info_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:padding="@dimen/friend_info_linear_padding"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/friend_info_note"
+        android:textSize="@dimen/friend_info_text_size"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <TextView
+        android:id="@+id/friend_info_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:padding="@dimen/friend_info_linear_padding"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/friend_info_email"
+        android:textSize="@dimen/friend_info_text_size"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <TextView
+        android:id="@+id/friend_info_signature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:padding="@dimen/friend_info_linear_padding"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/friend_info_signature"
+        android:textSize="@dimen/friend_info_text_size"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <TextView
+        android:id="@+id/friend_info_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:padding="@dimen/friend_info_linear_padding"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/friend_info_more"
+        android:textSize="@dimen/friend_info_text_size"
+        android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <TextView
+        android:id="@+id/friend_info_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:padding="@dimen/friend_info_linear_padding"
+        android:gravity="center"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/friend_info_btn_send"
+        android:textSize="@dimen/friend_info_text_size" />
+
+</LinearLayout>

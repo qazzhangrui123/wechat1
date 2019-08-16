@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEE"
+    tools:context=".set.Changepwd">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_finish"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_pwd_hint"
+            android:textSize="@dimen/settings_hint_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings_safety_pwd_old"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/settings_safety_pwd_old"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:inputType="textPassword"
+            android:hint="@string/settings_safety_pwd_old_hint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings_safety_pwd_new"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/settings_safety_pwd_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="25dp"
+            android:inputType="textPassword"
+            android:hint="@string/settings_safety_pwd_new_hint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/settings_safety_pwd_new2"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/settings_safety_pwd_new2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:inputType="textPassword"
+            android:hint="@string/settings_safety_pwd_new2_hint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_pwd_hint2"
+            android:textSize="@dimen/settings_hint_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_safety_pwd_forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_pwd_forget"
+            android:textSize="@dimen/settings_hint_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

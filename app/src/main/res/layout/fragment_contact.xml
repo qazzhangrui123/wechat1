@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context=".view.ContactFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contact_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.gao.wechat.view.LetterView
+        android:id="@+id/contact_letter_view"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        app:textColor="#333333"
+        app:textColorSelect="#FFFFFF"
+        app:backgroundSelect="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/contact_letter_text"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/contact_recycler_letter"
+        android:layout_centerInParent="true"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:background="@drawable/radius_bg"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

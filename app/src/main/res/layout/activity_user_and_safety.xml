@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEE"
+    tools:context=".set.UserAndSafety">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_finish"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:id="@+id/settings_safety_uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/settings_safety_uid_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_uid"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_safety_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/settings_safety_pwd_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_pwd"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_safety_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/settings_safety_contact_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_contact"
+            android:textSize="@dimen/friend_info_text_size"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_safety_device"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/settings_safety_device_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_device"
+            android:textSize="@dimen/friend_info_text_size"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_safety_finger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/settings_safety_finger_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_finger"
+            android:textSize="@dimen/friend_info_text_size"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/settings_safety_remove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/settings_safety_remove_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_safety_remove"
+            android:textSize="@dimen/friend_info_text_size"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

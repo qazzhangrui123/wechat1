@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEE"
+    android:id="@+id/register_layout"
+    tools:context=".activity.register.RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_finish"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/register_name"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/register_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="35dp"
+            android:inputType="text"
+            android:hint="@string/register_name_input"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/register_email"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="35dp"
+            android:inputType="textEmailAddress"
+            android:hint="@string/register_email_input"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/register_pwd"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="35dp"
+            android:inputType="textPassword"
+            android:hint="@string/register_pwd_input"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_2"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/register_repwd"
+            android:textSize="@dimen/friend_info_text_size"/>
+
+        <EditText
+            android:id="@+id/register_repwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:hint="@string/register_repwd_input"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/register_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/friend_info_margin_top_10"
+        android:orientation="horizontal"
+        android:background="@drawable/ripple_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/friend_info_linear_padding">
+
+        <TextView
+            android:id="@+id/register_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_button"
+            android:textSize="@dimen/friend_info_text_size"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

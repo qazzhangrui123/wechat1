@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="LetterView">
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textColorSelect" format="color|reference" />
+        <attr name="backgroundPrimary" format="color|reference" />
+        <attr name="backgroundSelect" format="color|reference" />
+    </declare-styleable>
+</resources>

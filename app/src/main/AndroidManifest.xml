@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gao.wechat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:authorities="com.gao.wechat.myself.MyHeadpic.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/head_pic_paths"/>
+        </provider>
+        <activity android:name=".myself.MyHeadpic"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+            <action android:name="com.gao.wechat.intent.action.myself.MyHeadpic" />
+
+            <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".msgreport.DetailsActivity" />
+        <activity android:name=".msgreport.MessageToast" />
+
+        <service
+            android:name=".msgreport.MsgService"
+            android:enabled="true"
+            android:exported="true" /> <!-- 添加好友界面 -->
+        <activity
+            android:name=".activity.FindFriendActivity"
+            android:theme="@style/AppTheme"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.AddFriend" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.FriendSeeSet"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.FriendSeeSet" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.AddMyway"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.AddMyway" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.CurrencySet"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.CurrencySet" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.PrivacySet"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.PrivacySet" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.MsgNotification"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.MsgNotification" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.Changepwd"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.Changepwd" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.UserAndSafety"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.UserAndSafety" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".set.UserSetpanel"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.set.UserSetpanel" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 修改生日页面 -->
+        <activity
+            android:name=".myself.MyBirthday"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.myself.MyBirthday" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 修改个签页面 -->
+        <activity
+            android:name=".myself.MySignature"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.myself.MySignature" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 修改昵称页面 -->
+        <activity
+            android:name=".myself.MyName"
+            android:theme="@style/AppTheme.NoActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.myself.MyName" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 启动页 -->
+        <activity
+            android:name=".activity.LauncherActivity"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 扫描条码界面 -->
+        <activity
+            android:name=".activity.QRCodeScanActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.QRCodeScan"
+            tools:replace="screenOrientation">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.activity.QRCodeScanActivity" />
+
+                <category android:name="android.intent.catgory.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 显示WebView -->
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.activity.WebViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 好友请求界面 -->
+        <activity
+            android:name=".activity.FriendRequestActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.activity.FriendRequestActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 登录界面 -->
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:label="@string/activity_login_title">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.activity.action.login.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 注册界面 -->
+        <activity
+            android:name=".activity.register.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.activity.register.RegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 好友信息界面 -->
+        <activity
+            android:name=".activity.FriendInfoActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.FriendInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 聊天界面 -->
+        <activity android:name=".activity.ChatActivity">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.ChatActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 主界面 -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.gao.wechat.intent.action.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_bottom_nav_chat_list"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:title="@string/main_bottom_nav_chat_list" />
+
+    <item
+        android:id="@+id/main_bottom_nav_contact"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/main_bottom_nav_contact" />
+
+    <item
+        android:id="@+id/main_bottom_nav_discover"
+        android:icon="@drawable/ic_explore_black_24dp"
+        android:title="@string/main_bottom_nav_discover"/>
+
+    <item
+        android:id="@+id/main_bottom_nav_myself"
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:title="@string/main_bottom_nav_myself" />
+
+</menu>

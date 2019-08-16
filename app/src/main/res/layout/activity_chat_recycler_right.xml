@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/chat_recycler_margin"
+    android:layout_marginBottom="@dimen/chat_recycler_margin">
+
+    <TextView
+        android:id="@+id/chat_activity_recycler_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/chat_recycler_time"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/chat_recycler_relative_margin">
+
+        <ImageView
+            android:id="@+id/chat_activity_recycler_image"
+            android:layout_width="@dimen/chat_recycler_image_size"
+            android:layout_height="@dimen/chat_recycler_image_size"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/chat_activity_recycler_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/chat_recycler_text_margin"
+            android:layout_marginEnd="@dimen/chat_recycler_text_margin"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/chat_recycler_text_padding"
+            android:paddingBottom="@dimen/chat_recycler_text_padding"
+            android:paddingStart="@dimen/chat_recycler_text_padding_end"
+            android:paddingEnd="@dimen/chat_recycler_text_padding_start"
+            android:text="@string/chat_recycler_message"
+            android:textSize="@dimen/chat_recycler_text_size"
+            android:textColor="@color/colorWhite"
+            android:background="@mipmap/ic_chat_message_right"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

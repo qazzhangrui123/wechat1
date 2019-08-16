@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QRCodeScanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:elevation="1dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/qrcode_scan_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#6000"/>
+
+    </LinearLayout>
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/qrcode_scan_barcode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_use_texture_view="false"
+        app:zxing_preview_scaling_strategy="centerCrop"
+        android:elevation="0dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/qrcode_scan_torch"
+        android:text="将二维码/条码放入框内，即可自动扫描"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/qrcode_scan_torch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:elevation="1dp">
+    </LinearLayout>
+
+</RelativeLayout>

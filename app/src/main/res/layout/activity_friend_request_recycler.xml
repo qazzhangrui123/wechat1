@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ripple_bg"
+    android:padding="@dimen/chat_list_recycler_padding">
+
+    <ImageView
+        android:id="@+id/friend_request_recycler_image"
+        android:layout_width="@dimen/chat_list_recycler_image_size"
+        android:layout_height="@dimen/chat_list_recycler_image_size"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/chat_list_recycler_center_margin"
+        android:layout_marginEnd="@dimen/chat_list_recycler_center_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/friend_request_recycler_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friend_request_name"
+            android:textSize="@dimen/chat_list_recycler_user_size"
+            android:textColor="@color/userName"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/friend_request_recycler_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friend_request_intro"
+            android:textSize="@dimen/chat_list_recycler_text_size"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/friend_request_recycler_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friend_request_accept" />
+
+    <Button
+        android:id="@+id/friend_request_recycler_refuse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friend_request_refuse"/>
+
+
+</LinearLayout>
